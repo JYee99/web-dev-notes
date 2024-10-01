@@ -16,7 +16,11 @@ export default function RootLayout({ children }) {
           <div className="navbar">
             <div>
               <Link href="/">Home</Link>
-              <Link href="/restExample">REST</Link>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <h3 style={{ color: '#757575', marginRight: '30px' }}>REST</h3>
+
+                <Link href="/restExample">REST</Link>
+              </div>
             </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <h3 style={{ color: '#757575', marginRight: '30px' }}>Graphql</h3>
@@ -28,6 +32,17 @@ export default function RootLayout({ children }) {
               <Link href="/graphqlExample/graphqlMutationProduct">
                 Mutation Product
               </Link>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <h3 style={{ color: '#757575', marginRight: '30px' }}>Routing</h3>
+              <Link href="/routing/routingPractice01">Static Routing</Link>
+              <Link href="/routing/routingPractice02">Dynamic Routing</Link>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <h3 style={{ color: '#757575', marginRight: '30px' }}>
+                Container Presenter
+              </h3>
+              <Link href="/containerPresenter">Container Presenter</Link>
             </div>
           </div>
           {children}
