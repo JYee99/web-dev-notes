@@ -44,6 +44,18 @@ export default function RootLayout({ children }) {
               </h3>
               <Link href="/containerPresenter">Container Presenter</Link>
             </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <h3 style={{ color: '#757575', marginRight: '30px' }}>
+                Set State
+              </h3>
+              <Link href="/setState">Set State</Link>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <h3 style={{ color: '#757575', marginRight: '30px' }}>Map</h3>
+              <Link href="/map/map01">Map 01</Link>
+              <Link href="/map/map02">Map 02</Link>
+              <Link href="/map/map03">Map 03</Link>
+            </div>
           </div>
           {children}
         </ApolloProviderComponent>
